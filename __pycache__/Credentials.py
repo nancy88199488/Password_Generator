@@ -12,5 +12,11 @@
          '''
          Method that saves the credentials object into the credentials_list
          '''
-         
+         self.credentials_list.append(self)
+
+         def delete_credentials(self)
+         '''
+         Method that deletes the credentials object 
+         '''
+
 
