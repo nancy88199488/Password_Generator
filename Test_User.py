@@ -1,5 +1,5 @@
 import unittest
-from User import user
+from User import User, user
 
 class TestUser(unittest.TestCase):
         '''
@@ -14,10 +14,24 @@ def setUp(self):
 
         '''
         self.new_user  = user("NewUser", "963258741")
+
         def test_init(self):
             '''
             Test to ensure that the object is initialized properly
             '''
-            
+            self.assertEqual(self.new_user.user_name, "NewUser")
+            self.assertEqual(self.new_user.password,  "963258741")
+
+            def test_save_user(self):
+                '''
+                  test_save_user test case to test if the user object is saved into the user list
+                '''
+                self.new_user.save_user()
+                self.assertEqual(len(User.user_list),1)
+
+                if
+
+
+
             
     
