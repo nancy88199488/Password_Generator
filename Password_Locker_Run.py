@@ -1,6 +1,50 @@
 import random
 from User import User
 from Credentials import Credentials
+ # Functions to add credentials
+
+def create_new_credential(account_name, account_password):
+    """
+    Function to create a new account and its credentials
+    """
+    new_credential = Credentials(account_name, account_password)
+    return new_credential
+
+
+def save_new_credential(credentials):
+    """
+    Function to save the created account and password
+    """
+    credentials.save_credentials()
+
+
+def find_credential(account_name):
+    """
+    Function that finds credentials based on account_name given
+    """
+    return Credentials.find_by_name(account_name)
+
+
+def check_existing_credentials(name):
+    """
+    Method that checks if a particular account and its credentials exists based on entered account_name
+    """
+    return Credentials.find_by_name(name)
+
+
+def display_credentials():
+    """ 
+    Function which displays the saved credentials
+    """
+    return Credentials.display_credentials()
+
+
+def delete_credential(credentials):
+    """
+    Method that deletes credentials
+    """
+    return Credentials.delete_credential(credentials)
+
 def main():
     while True:
         print("Thank you and welcome to the password locker")
