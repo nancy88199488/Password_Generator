@@ -10,4 +10,8 @@ Nancy kemunto
 
 It's an application where you can create ,manage passwords and even generate new passwords.
 
+#  Setup/Installation
 
+* Clone the repository to your local directory in your computer
+* Install python3 in your computer
+* Run python3 in the terminal and get started
