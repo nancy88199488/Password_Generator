@@ -19,3 +19,7 @@ It's an application where you can create ,manage passwords and even generate new
 #  Technologies Used
 
 Python
+
+#  Contacts
+
+Email:nancykemuntosalome@gmail.com
