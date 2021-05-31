@@ -15,3 +15,7 @@ It's an application where you can create ,manage passwords and even generate new
 * Clone the repository to your local directory in your computer
 * Install python3 in your computer
 * Run python3 in the terminal and get started
+
+#  Technologies Used
+
+Python
