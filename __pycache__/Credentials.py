@@ -14,9 +14,11 @@
          '''
          self.credentials_list.append(self)
 
-         def delete_credentials(self)
-         '''
-         Method that deletes the credentials object 
-         '''
+         def delete_credentials(self):
+             '''
+         Method that deletes  credentials specified  
+             '''
+             @classmethod
+             def credentials_exists(cls, name):
 
 
