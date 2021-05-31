@@ -1,5 +1,7 @@
 class Credentials:
-    """Create class for credentials"""
+    '''
+    Created class for credentials
+    '''
 
     def __init__(self, account_name, account_password):
         self.account_name = account_name
@@ -8,21 +10,26 @@ class Credentials:
     credentials_list = []
 
     def save_credentials(self):
-        """Method that saves credential objects into credentials_list"""
+        '''
+        Method that saves credentials objects into credentials_list
+        '''
         self.credentials_list.append(self)
 
     def delete_credential(self):
-        """Method which deletes a particular credential"""
+        '''
+        Method that deletes a particular credential
+        '''
         Credentials.credentials_list.remove(self)
 
     @classmethod
     def find_by_name(cls, account_name):
-        """Method that takes in a name and returns a credential that matches that particular name
+        '''
+        Method that takes in a name and returns a credential that matches that particular name
         Args:
             name: account_name that has a password
-        Returns:
-            The account_name and it's corresponding PassWord
-        """
+        Return:
+            the account_name and it's corresponding Password
+        '''
 
         for credential in cls.credentials_list:
             if credential.account_name == account_name:
@@ -30,11 +37,12 @@ class Credentials:
 
     @classmethod
     def credential_exists(cls, name):
-        """Method to check whether a credential exists
+        '''
+        Method to check if the credential exists
         Args:
-        name: name of account to search whether it exists
+        name: name of account to search if it exists
         boolean: True or False depending if the contatc exists
-        """
+        '''
 
         for credential in cls.credentials_list:
             if credential.account_name == name:
@@ -43,5 +51,7 @@ class Credentials:
 
     @classmethod
     def display_credentials(cls):
-        """Method which displays all current credentials"""
+        '''
+        Method which displays the current credentials
+        '''
         return cls.credentials_list
